@@ -1,4 +1,7 @@
 FROM openshift/python
-EXPOSE 8080
 
-CMD python test.py
+
+COPY ./test.py /opt
+CMD python /opt/test.py
+
+EXPOSE 8080
