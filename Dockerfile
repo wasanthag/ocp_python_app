@@ -1,4 +1,4 @@
-FROM openshift/python
+FROM python-27-rhel7
 
 
 COPY ./app.py /opt
