@@ -2,7 +2,7 @@ import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 HOST_NAME = 'localhost'
-PORT_NUMBER = 9000
+PORT_NUMBER = 8080
 
 
 class MyHandler(BaseHTTPRequestHandler):
@@ -29,8 +29,8 @@ class MyHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html')
         self.end_headers()
         content = '''
-        <html><head><title>Title goes here.</title></head>
-        <body><p>This is a test.</p>
+        <html><head><title>S2I test</title></head>
+        <body><p>This is a ocp s2i test.</p>
         <p>You accessed path: {}</p>
         </body></html>
         '''.format(path)
