@@ -1,7 +1,7 @@
 FROM openshift/python
 
 
-COPY ./test.py /opt
-CMD python /opt/test.py
+COPY ./app.py /opt
+CMD python /opt/app.py
 
 EXPOSE 8080
